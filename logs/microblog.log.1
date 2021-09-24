@@ -1,0 +1,120 @@
+2021-09-15 17:09:03,908 ERROR: Exception on /reset_password_request [POST] [in d:\anaconda3\envs\flask\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\routes.py", line 163, in reset_password_request
+    send_password_reset_email(user)
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\email.py", line 22, in send_password_reset_email
+    user=user, token=token))
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "d:\anaconda3\envs\flask\lib\socket.py", line 728, in create_connection
+    raise err
+  File "d:\anaconda3\envs\flask\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+2021-09-15 17:11:45,182 ERROR: Exception on /reset_password_request [POST] [in d:\anaconda3\envs\flask\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\routes.py", line 163, in reset_password_request
+    send_password_reset_email(user)
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\email.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 338, in connect
+    (code, msg) = self.getreply()
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 394, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2021-09-15 17:15:15,242 ERROR: Exception on /reset_password_request [POST] [in d:\anaconda3\envs\flask\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\routes.py", line 163, in reset_password_request
+    send_password_reset_email(user)
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\email.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 730, in login
+    raise last_exception
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials b4sm14446947pga.69 - gsmtp')
+2021-09-15 17:16:30,964 ERROR: Exception on /reset_password_request [POST] [in d:\anaconda3\envs\flask\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\routes.py", line 163, in reset_password_request
+    send_password_reset_email(user)
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\email.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "E:\Code\python\FlaskStudy\MicroBlog\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "d:\anaconda3\envs\flask\lib\site-packages\flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 730, in login
+    raise last_exception
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "d:\anaconda3\envs\flask\lib\smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials n9sm2651037pjk.3 - gsmtp')
